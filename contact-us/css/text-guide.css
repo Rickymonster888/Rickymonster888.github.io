@@ -1,0 +1,99 @@
+/*大標*/
+.large-title{
+    font-family: 'Noto Serif TC';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 101px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+/*中標*/
+.mid-ch-title{
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 35px;
+    letter-spacing: 0.15em;
+
+    color: #FFFFFF;
+}
+.mid-eng-title{
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 60px;
+
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+/*小標*/
+.little-title{
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+
+    color: #191E20;
+}
+
+/*內文*/
+.text{
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+/*width>1600時的螢幕更改*/
+@media (min-width: 1600px) {
+    .large-title {
+        font-family: 'Noto Serif TC';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 101px;
+        letter-spacing: 0.1em;
+    }
+    .text {
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 35px;
+        letter-spacing: 0.1em;
+    }
+    .mid-eng-title{
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 60px;
+
+        letter-spacing: 0.1em;
+    }
+    .mid-ch-title{
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+        letter-spacing: 0.1em;
+    }
+    .little-title{
+        font-family: 'Noto Sans TC';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 35px;
+        letter-spacing: 0.1em;
+    }
+  }
