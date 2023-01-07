@@ -2,6 +2,9 @@
   background-color: #b5253e;
   background-size: cover;
 }
+.footer .mid-ch-title {
+  color: #ffffff;
+}
 .footer {
   display: inline-block;
   width: 69vw;
@@ -54,4 +57,70 @@
 .text-right {
   float: right;
   text-align: end;
+}
+/*RWD*/
+@media (max-width: 1151px) {
+  .footer {
+    margin: 50px 10vw;
+    width: 80vw;
+  }
+  .footer-title {
+    width: 61.5vw;
+  }
+}
+@media (max-width: 991px) {
+  .footer {
+    margin: 50px 7.5vw;
+    width: 85vw;
+  }
+  .mid-ch-title {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .footer-text .text {
+    font-size: 13px;
+  }
+  .footer-icons {
+    text-align: end;
+  }
+  .footer-title {
+    width: 68.5vw;
+  }
+  #footer-icon {
+    width: 12.5vw;
+  }
+  .footer-icons img {
+    margin: 0 7px;
+  }
+}
+@media (max-width: 681px) {
+  .footer {
+    margin: 50px 5vw;
+    width: 90vw;
+  }
+  .footer-title {
+    width: 73.5vw;
+  }
+  .footer-text .text {
+    font-size: 12px;
+  }
+  .footer-text .text {
+    font-size: 8px;
+  }
+}
+@media (max-width: 576px) {
+  .footer-text .text {
+    font-size: 8px;
+  }
+  .mid-ch-title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .footer-icons {
+    display: none !important;
+  }
+}
+
+#bg-white {
+  background-color: #ffffff;
 }
