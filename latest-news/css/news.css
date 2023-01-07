@@ -190,7 +190,9 @@ h8 {
   margin-bottom: 50px;
 }
 
-.news-box-row a:hover {
+.news-box-row a:hover,
+.carousel-item a .carousel-banner-img:hover,
+.carousel-banner-text a:hover {
   -webkit-filter: opacity(80%);
   -webkit-filter: brightness(60%);
   transition-duration: 1000ms;
@@ -257,7 +259,7 @@ h8 {
     line-height: 25px;
   }
 }
-@media (max-width: 603px) {
+@media (max-width: 700px) {
   .mob-tit {
     display: block;
     text-align: center;
