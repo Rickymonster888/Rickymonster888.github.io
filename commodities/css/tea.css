@@ -408,7 +408,7 @@ img.d-block {
 
 /*footer*/
 #footer-circle {
-  transform: translateY(10px);
+  transform: translateY(3px);
 }
 .footer-bg {
   background-color: #b5253e;
@@ -493,6 +493,12 @@ img.d-block {
 }
 
 @media (max-width: 991px) {
+  .repro-bl > img {
+    display: none;
+  }
+  .repro-bl > div > img {
+    margin-bottom: 100px;
+  }
   .sidebar {
     display: none;
     position: relative;
@@ -570,7 +576,7 @@ img.d-block {
   }
 
   #carouselExampleIndicators {
-    margin-top: 100px;
+    margin-top: 150px;
   }
 
   .intro {
@@ -814,7 +820,7 @@ img.d-block {
     padding: 8px 0;
   }
   #carouselExampleIndicators {
-    margin-top: 100px;
+    margin-top: 150px;
   }
 
   .intro {
