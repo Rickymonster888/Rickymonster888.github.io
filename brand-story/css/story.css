@@ -1,0 +1,249 @@
+/*reset-bookstrap*/
+img {
+  vertical-align: baseline !important;
+}
+#banner-cicle {
+  transform: translateY(10px);
+}
+
+/*nav*/
+.navbar {
+  width: 100%;
+  position: relative !important;
+  display: inline-flex !important;
+}
+.container-fluid {
+  margin: 10px 0 10px 20px !important;
+}
+.right-icon {
+  margin-right: 30px;
+}
+.navbar-nav {
+  margin: auto;
+}
+.nav-link {
+  padding: 0 !important;
+}
+.nav-item a {
+  display: flex;
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.nav-item a:hover {
+  color: #b5253e;
+}
+.nav-item {
+  margin: 0 2.5vw;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+  background-image: url(../img/hamberger.png);
+}
+.right-icon-mobile {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+@media (max-width: 991px) {
+  .right-icon {
+    display: none;
+  }
+  .right-icon-mobile {
+    display: inherit;
+  }
+}
+
+/*conten*/
+body {
+  background-color: #191e20;
+}
+
+.block-first {
+  margin: 0 15.5vw;
+}
+.title1 {
+  width: 100%;
+}
+.A-part-content {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  margin-top: 117px;
+  height: 30px;
+}
+.hot-coffee {
+  display: inline-block;
+  width: 40%;
+  padding-left: 4.5vw;
+  height: 30px;
+}
+@media (max-width: 991px) {
+  .hot-coffee {
+    display: none;
+  }
+  .title1 {
+    width: 51%;
+  }
+  .A-part-content {
+    width: 100%;
+    text-align: center;
+    margin-top: 117px;
+    height: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .hot-coffee {
+    display: none;
+  }
+  .title1 {
+    width: 90%;
+  }
+  .A-part-content {
+    width: 100%;
+    text-align: center;
+    margin-top: 117px;
+    height: 30px;
+  }
+}
+
+.text1 {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  width: 100%;
+}
+.block2 {
+  background-image: url(../img/red.png);
+  background-color: #191e20;
+  background-position: center;
+  background-size: cover;
+  padding: 10% 0px;
+}
+.title2 {
+  width: 70%;
+}
+
+.conten2 {
+  text-align: center;
+  margin: 230px 15.5vw 200px;
+}
+.conten2 > .text1 {
+  text-align: center;
+  padding-top: 50px;
+}
+@media (max-width: 991px) {
+  .title2 {
+    width: 52%;
+  }
+}
+
+.conten3-title {
+  margin: 0 15.5vw;
+  display: flow-root;
+}
+
+.left-title {
+  display: inline-block;
+}
+.right-title {
+  /*
+  text-align: right;
+  width: calc(100% - 288px);
+  */
+  float: right;
+}
+.right-title,
+.left-title h1,
+h2 {
+  font-family: "Noto Serif TC";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: right;
+  letter-spacing: 0.155em;
+  color: #ffffff;
+}
+.bread {
+  margin-top: 80px;
+}
+.conten3-top {
+  border-top: solid #ffffff 2px;
+  margin: 4vw 13vw;
+  text-align: center;
+}
+.conten3-top > .text1 {
+  margin-top: 50px;
+}
+.conten3-bottom > .text1 {
+  text-align: center;
+  padding-top: 100px;
+  margin: 0px 15.5vw;
+  width: 69vw;
+}
+@media (max-width: 991px) {
+  .right-title,
+  .left-title h1,
+  h2 {
+    font-family: "Noto Serif TC";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: right;
+    letter-spacing: 0.155em;
+    color: #ffffff;
+  }
+  .text1 {
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .title2 {
+    width: 90%;
+  }
+  .right-title,
+  .left-title h1,
+  h2 {
+    font-family: "Noto Serif TC";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: 0.155em;
+    color: #ffffff;
+  }
+  .text1 {
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-size: 12px;
+    line-height: 27px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    width: 100%;
+  }
+}
+@media (min-width: 1600px) {
+  .nav-item a {
+    font-size: 20px;
+  }
+}
