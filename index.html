@@ -1,462 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-tw">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>85°C Daily Cafe｜咖啡蛋糕烘培專賣店</title>
-    <link rel="icon" type="image/x-icon" href="./img/85c_Daily_Cafe_logo.png" />
+    <title>Organ Donation</title>
 
-    <!-- CSS only -->
     <link href="./css/reset.css" rel="stylesheet" />
-    <link href="./css/bookstrap.css" rel="stylesheet" />
+    <link href="./css/locomotive-scroll.css" rel="stylesheet" />
+
     <link href="./css/text-guide.css" rel="stylesheet" />
     <link href="./css/main.css" rel="stylesheet" />
-    <link href="./css/footer.css" rel="stylesheet" />
-
-    <link href="/css/noto-font.css" rel="stylesheet" />
   </head>
   <body>
-    <!--navbar-->
-    <nav class="navbar navbar-expand-lg" style="background-color: #191e20">
-      <div class="container-fluid">
-        <!--左邊icon-->
-        <a class="navbar-brand" href="./index.html">
-          <img
-            src="./img/logo-white.png"
-            width="80px"
-            src="./img/navtext-right.png"
-            id="right-icon-mobile"
-            width="150px"
-          />
-        </a>
-        <!--hamberger-->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!--五個分類-->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link" href="./latest-news/news.html">最新消息</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./commodities/bread.html">商品資訊</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./store-inquiry/store-inquiry.html"
-                >門市資訊</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./brand-story/story.html">品牌故事</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact-us/contact-us.html"
-                >聯絡我們</a
-              >
-            </li>
-          </ul>
-        </div>
+    <!--icon轉場列(上)-->
+    <!--<div class="columns top-columns">
+      <div class="icon-column"></div>
+      <div class="icon-column">
+        <div><img src="./img/color-icon/muscle.png" /></div>
+        <div><img src="./img/color-icon/skin.png" /></div>
+        <div><img src="./img/color-icon/lungs.png" /></div>
+        <div><img src="./img/color-icon/bone.png" /></div>
+        <div><img src="./img/color-icon/heart.png" /></div>
+        <div><img src="./img/color-icon/eyes.png" /></div>
       </div>
-      <!--右邊的文字-->
-      <div class="right-icon">
-        <img src="./img/navtext-right.png" width="150px" />
+      <div class="icon-column"></div>
+      <div class="icon-column">
+        <div><img src="./img/color-icon/muscle.png" /></div>
+        <div><img src="./img/color-icon/skin.png" /></div>
+        <div><img src="./img/color-icon/lungs.png" /></div>
+        <div><img src="./img/color-icon/bone.png" /></div>
+        <div><img src="./img/color-icon/heart.png" /></div>
+        <div><img src="./img/color-icon/eyes.png" /></div>
       </div>
-    </nav>
+      <div class="icon-column"></div>
+    </div>-->
 
-    <!--首圖(第一幀full)-->
-    <div class="my-banner">
-      <img src="./img/banner-drinkk.png" id="banner-linecircle" />
+    <!--入場動畫-->
+    <div class="open-animate">
+      <h1 class="alice disappear-title">Organ Donation</h1>
     </div>
 
-    <!--品牌故事-->
-    <div class="home-brand-story">
-      <div class="home-brand-pic">
-        <img src="./img/brand-coffee.png" width="100%" />
-      </div>
-      <div class="home-brand-story-text">
-        <div class="home-brand-story-text1">
-          <p class="large-title">About 85°C</p>
-          <p class="text">
-            於西元2004年開始，85°C以「咖啡、蛋糕與烘培」經典組合，深耕全台都會、商圈與鄉間小鎮。
-            堅持「物超所值」的初衷，分享精緻蛋糕與美味烘培，搭配健康食尚飲品。
-          </p>
-          <br />
-          <p class="text">
-            以 『Think Globally ， Act Locally』的用心，
-            從臺灣跨越大陸、美國、澳洲、香港與柬埔寨等地區，躍升國際化品牌新貌。
-          </p>
+    <!--icon轉場列(下)-->
+    <!--<div>
+      <div class="columns">
+        <div class="icon-column">
+          <div><img src="./img/color-icon/muscle.png" /></div>
+          <div><img src="./img/color-icon/skin.png" /></div>
+          <div><img src="./img/color-icon/lungs.png" /></div>
+          <div><img src="./img/color-icon/bone.png" /></div>
+          <div><img src="./img/color-icon/heart.png" /></div>
+          <div><img src="./img/color-icon/eyes.png" /></div>
         </div>
-        <div class="home-brand-story-text2">
-          <p class="large-title">一杯咖啡成就85°C</p>
-          <p class="text">
-            85°C創辦人吳政學，因為小舅子喜愛喝咖啡，有天心血來潮拿溫度計去測量咖啡，發現攝氏85度C的水沖出來的咖啡最好喝，便成了85°C品牌由來。
-          </p>
-          <br />
-          <p class="text">
-            2003年初吳政學先生率高階主管共享五星級飯店下午茶，席間皆認同餐點實屬美饌，但價格不斐，頓時萌生「五星級饗宴、平價化體驗」意念，多次親訪五星名廚；延攬專業研發團隊，逐步開展跨國企業版圖。
-          </p>
-        </div>
-      </div>
-    </div>
 
-    <!--最新消息-->
-    <div class="bg-red">
-      <div class="home-brand-story-2">
-        <div class="img-dailycafe">
-          <img src="./img/brands-Daily-Cafe.png" width="200px" />
+        <div class="icon-column"></div>
+
+        <div class="icon-column">
+          <div><img src="./img/color-icon/muscle.png" /></div>
+          <div><img src="./img/color-icon/skin.png" /></div>
+          <div><img src="./img/color-icon/lungs.png" /></div>
+          <div><img src="./img/color-icon/bone.png" /></div>
+          <div><img src="./img/color-icon/heart.png" /></div>
+          <div><img src="./img/color-icon/eyes.png" /></div>
         </div>
-        <div class="img-hand-coffee">
-          <img src="./img/brand-coffee-2.png" width="350px" />
+
+        <div class="icon-column"></div>
+
+        <div class="icon-column">
+          <div><img src="./img/color-icon/muscle.png" /></div>
+          <div><img src="./img/color-icon/skin.png" /></div>
+          <div><img src="./img/color-icon/lungs.png" /></div>
+          <div><img src="./img/color-icon/bone.png" /></div>
+          <div><img src="./img/color-icon/heart.png" /></div>
+          <div><img src="./img/color-icon/eyes.png" /></div>
         </div>
       </div>
+    </div>-->
 
-      <div class="home-lastest-news">
-        <div class="home-news-title">
-          <p class="large-title">最新消息</p>
-          <p class="mid-eng-title">Latest news</p>
+    <!--第一幀滿版-->
+    <div class="banner-title">
+      <!--左側nav欄位(有問題)-->
+      <!--
+      <div class="banner-title-leftnav">
+        <div class="leftnav-button">
+          <h4 class="alice">Process</h4>
+          <h4 class="noto-serif-tc">過程</h4>
         </div>
 
-        <div class="home-news-boxes">
-          <!--最新消息box1-->
-          <a href="./latest-news/inner-pages/news-article03.html">
-            <div class="home-news-boxes-group">
-              <div class="news-date">
-                <p class="date">08</p>
-                <p class="month">OCT</p>
-              </div>
-
-              <div class="home-news-boxes-img">
-                <img src="./img/lemon-tea.png" width="250px" />
-              </div>
-
-              <div class="news-texts">
-                <p class="little-title">
-                  85℃大杯冰多多綠10/8-10/11第2杯10元！連續四天多多分享日每人限購三組！
-                </p>
-                <hr />
-                <p class="text">
-                  搶雙十連假飲料商機，85℃從10月8日開始到10月11日，連續四天推出多多分享日活動，
-                  原價50元的大杯冰多多綠茶第二杯特價只要10元，手搖控們不要錯過省荷包聰明消費的機會。...
-                </p>
-
-                <div class="see-more">
-                  <p class="text">&#8594; 查看更多</p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <!--最新消息box2-->
-          <a href="./latest-news/inner-pages/news-article02.html">
-            <div class="home-news-boxes-group">
-              <div class="news-date">
-                <p class="date">05</p>
-                <p class="month">OCT</p>
-              </div>
-
-              <div class="home-news-boxes-img">
-                <img src="./img/halloween.png" width="250px" />
-              </div>
-
-              <div class="news-texts">
-                <p class="little-title">
-                  不給糖就搗蛋！85℃聯名六福村推萬聖節造型蛋糕「萬聖小惡魔、淘氣幽靈小蛋糕」，購買「萬聖狂歡鎮」即可獲得六福村雙人門票798元優惠小白單！
-                </p>
-                <hr />
-                <p class="text">
-                  Trick or
-                  treat！不給糖就搗蛋，迎接西洋萬聖節，85℃與六福村獨家聯名推出三款限定版蛋糕，分別是萬聖小惡魔、淘氣幽靈切片小蛋糕，和6吋的萬聖狂歡鎮等，款款超萌搞怪，讓人愛不釋手。...
-                </p>
-                <div class="see-more">
-                  <p class="text">&#8594; 查看更多</p>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <!--最新消息box3-->
-          <a href="#">
-            <div class="home-news-boxes-group">
-              <div class="news-date">
-                <p class="date">26</p>
-                <p class="month">SEP</p>
-              </div>
-
-              <div class="home-news-boxes-img">
-                <img src="./img/home-news-img-1.png" width="250px" />
-              </div>
-
-              <div class="news-texts">
-                <p class="little-title">
-                  85度C全新「長條蛋糕」開賣！芋頭控必吃這款，超濃郁芋泥慕斯在這
-                </p>
-                <hr />
-                <p class="text">
-                  迎接涼爽的秋季到來，85℃特別推出了2款秋季長條蛋糕，
-                  分別是濃郁巧克力風味的「雪藏提拉米蘇長條蛋糕」、香濃的「芋香布蕾長條蛋糕」，
-                  迷人的療癒風味，當作下午茶超級適合，各位甜點控千萬別錯過啦！...
-                </p>
-
-                <div class="see-more">
-                  <p class="text">&#8594; 查看更多</p>
-                </div>
-              </div>
-            </div>
-          </a>
+        <div class="leftnav-button">
+          <h4 class="alice">Intro</h4>
+          <h4 class="noto-serif-tc">介紹</h4>
         </div>
 
-        <div class="more-button-line">
-          <a href="./latest-news/news.html">
-            <img src="./img/hover-more.png" />
-            <img src="./img/more-line.png" />
-          </a>
+        <div class="leftnav-button">
+          <h4 class="alice">Donate</h4>
+          <h4 class="noto-serif-tc">捐贈</h4>
         </div>
+      </div>-->
+
+      <div class="banner-title-first">
+        <h1 class="alice">Give Live & Believe</h1>
+        <p class="s-text noto-serif-tc">
+          一切殞落，同時也滋養著另一個生機。在離開之前，留下一部分的自己，成為另一個生命的養分。<br />
+          所謂遺愛人間，便是捐贈器官，同時積累一份善意。
+        </p>
       </div>
     </div>
 
-    <!--熱銷商品-->
-    <div class="hot-products">
-      <!--熱銷商品-標題-->
-      <div class="hot-products-title">
-        <p class="large-title">熱銷商品</p>
-        <p class="mid-eng-title">HOT PRODUCTS</p>
-      </div>
-      <!--熱銷商品-主體-->
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="true"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/drinks/海鹽紅茶.png" height="90%" alt="..." />
-            <div class="drink-div">
-              <p class="drink-title">海鹽紅茶</p>
-              <div class="drink-p">
-                <p class="drink-size-large">L</p>
-                <p class="drink-money">50</p>
-                <p class="drink-size-medium">M</p>
-                <p class="drink-money">35</p>
-              </div>
-              <p class="drink-inform">
-                濃厚茶香的錫蘭紅茶遇上細緻綿密的海岩奶酪，合拍的口感總令人回味。
-              </p>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="./img/drinks/柚香紅茶 (1).png" height="90%" alt="..." />
-            <div class="drink-div">
-              <p class="drink-title">柚香紅茶</p>
-              <div class="drink-p">
-                <p class="drink-size-large">冰 L / 熱 M</p>
-                <p class="drink-money">55</p>
-              </div>
-              <p class="drink-inform">
-                酸甜口感的韓式柚子醬，帶有一點蜂蜜的清甜和柚子的微酸，搭配清爽薄荷香的錫蘭紅茶，兩者結合交織成美妙的味覺享受。
-              </p>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="./img/drinks/Hazelnut-Latte.png" height="90%" alt="..." />
-            <div class="drink-div">
-              <p class="drink-title">榛果風味拿鐵</p>
-              <div class="drink-p">
-                <p class="drink-size-large">L</p>
-                <p class="drink-money">99</p>
-                <p class="drink-size-medium">M</p>
-                <p class="drink-money">85</p>
-              </div>
-              <p class="drink-inform">
-                將85度C高品質咖啡與濃醇香鮮奶調和而成的馥郁拿鐵，再與榛果完美結合，由榛果風味、咖啡香、奶香交織而成的風味拿鐵，口口都令人回味。
-              </p>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img
-              src="./img/drinks/pudding-milktea.png"
-              height="90%"
-              alt="..."
-            />
-            <div class="drink-div">
-              <p class="drink-title">布丁鮮奶茶</p>
-              <div class="drink-p">
-                <p class="drink-size-large">L</p>
-                <p class="drink-money">65</p>
-              </div>
-              <p class="drink-inform">
-                香醇鮮奶搭配濃郁順口的錫蘭茶香，加整顆布丁的綿密豐厚口感，令人想一喝再喝！
-              </p>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="./img/drinks/黑鑽咖啡.png" height="90%" alt="..." />
-            <div class="drink-div">
-              <p class="drink-title">黑鑽咖啡</p>
-              <div class="drink-p">
-                <p class="drink-size-large">L</p>
-                <p class="drink-money">80</p>
-              </div>
-              <p class="drink-inform">
-                使用現萃咖啡液製成的香濃咖啡凍，絲滑而Q彈，光澤明亮，如同鑽石一般，濃厚的堅果香氣，搭配以黃金比例特調的咖啡，尾韻甜苦而回甘，奶香縈繞。
-              </p>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="./img/drinks/雙倍伯爵凍歐蕾.png" height="90%" alt="..." />
-            <div class="drink-div">
-              <p class="drink-title">雙倍伯爵凍歐蕾</p>
-              <div class="drink-p">
-                <p class="drink-size-large">L</p>
-                <p class="drink-money">60</p>
-              </div>
-              <p class="drink-inform">
-                以伯爵紅茶為基底，加入新鮮鮮乳，再搭配手工伯爵茶凍，雙倍的伯爵風味，加倍滿足。
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="4"
-            aria-label="Slide 5"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="5"
-            aria-label="Slide 6"
-          ></button>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-      <!--熱銷商品-more-->
-      <a href="./commodities/bread.html">
-        <div class="hot-products-more">
-          <img src="./img/more-hover-red.png" width="100%" />
-          <img src="./img/熱銷商品_more.png" width="100%" />
-          <br />
-          <br />
-          <br />
-        </div>
-      </a>
-    </div>
-
-    <!--footer-->
-    <img src="./img/footer-bg.png" width="100%" />
-    <div class="footer-bg">
-      <div class="footer">
-        <img src="./img/logo-white.png" id="footer-icon" width="100%" />
-
-        <div class="footer-title">
-          <p class="mid-ch-title">開曼美食達人股份有限公司</p>
-          <div id="footer-title-buttom">
-            <p class="mid-ch-title">Gourmet Master Co., Ltd.</p>
-            <div class="footer-icons">
-              <a href="https://www.tiktok.com/@85_cafe">
-                <img src="./img/icons/tiktok.png" width="10%" />
-              </a>
-              <a href="https://www.instagram.com/85cafe/">
-                <img src="./img/icons/ig.png" width="13%" />
-              </a>
-              <a href="https://www.facebook.com/85cafe">
-                <img src="./img/icons/facebook.png" width="5.5%" />
-              </a>
-              <a
-                href="https://www.youtube.com/channel/UCmBJyRwncvDj9sCsuwY6oTw"
-              >
-                <img src="./img/icons/youtube.png" width="16%" />
-              </a>
-            </div>
-          </div>
-          <hr />
-        </div>
-
-        <div class="footer-text">
-          <div>
-            <p class="text">
-              85度C版權所有非經授權，不得轉載本網站內容。
-              <br />
-              Copyright © 2020 Gourmet Master Co. Ltd.
-              <br />
-              All Right Reserved.
-            </p>
-          </div>
-
-          <div class="text-right">
-            <p class="text">
-              【品質用心保證】
-              <br />
-              *本公司產品已投保6000萬產品責任險
-              <br />
-              *本公司通過HACCP及ISO22000品質驗證
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="./js/bootstrap.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,68 @@
+body {
+  background: #e95514;
+}
+.page1-precaution {
+  display: inline-flex;
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(../../img/bg-grid.png);
+  background-size: cover;
+}
+.title-donation {
+  display: inline-flex;
+  width: 20vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.title-donation img {
+  height: 35vh;
+}
+.precaution-content {
+  display: inline-flex;
+  width: 80vw;
+  height: 90vh;
+  padding: 5vh 0;
+
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-end;
+}
+.precaution-content p {
+  display: block;
+  height: 70vh;
+
+  overflow: scroll;
+  padding: 0 175px 0 80px;
+}
+.precaution-content div {
+  position: relative;
+  display: block;
+  width: 200px;
+  padding: 0 0 0 80px;
+}
+.precaution-content div {
+  display: block;
+  width: 200px;
+  margin-right: 200px;
+  margin-bottom: 10vh;
+}
+.precaution-content img {
+  position: absolute;
+
+  -webkit-transition: opacity 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out;
+  -o-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+}
+.precaution-content img:last-child:hover {
+  opacity: 0;
+}
+.page1-disappear {
+  display: none;
+}
+.oho {
+  position: absolute;
+  bottom: 0%;
+}

@@ -1,534 +1,124 @@
-hr {
-  opacity: 100;
+/*Alice-font-setting*/
+@font-face {
+  font-family: "Alice";
+  src: url(../font/Alice.eot) format("embedded-opentype"),
+    url(../font/Alice.ttf) format("truetype"),
+    url(../font/Alice.woff) format("woff");
 }
-p {
-  margin-bottom: 0;
-}
-.navbar {
-  width: 100%;
-  position: relative !important;
-  display: inline-flex !important;
-}
-.container-fluid {
-  margin: 10px 0 10px 20px !important;
-}
-.right-icon {
-  margin-right: 30px;
-}
-.navbar-nav {
-  margin: auto;
-}
-.nav-link {
-  padding: 0 !important;
-}
-.nav-item a {
-  display: flex;
-  font-family: "Noto Sans TC";
-  font-style: normal;
-  font-weight: 500;
-  line-height: 35px;
-  text-align: center;
-  letter-spacing: 0.1em;
-  color: #ffffff;
-}
-@media (min-width: 1600px) {
-  .nav-item a {
-    font-size: 20px;
-  }
-}
-.nav-item a:hover {
-  color: #b5253e;
-}
-.nav-item {
-  margin: 0 2.5vw;
-}
-.navbar-toggler {
-  border: none;
-}
-.navbar-toggler-icon {
-  background-image: url(../img/hamberger.png);
-}
-.right-icon-mobile {
+/**/
+body::-webkit-scrollbar {
   display: none;
 }
-a {
-  text-decoration: none;
-}
 body {
-  background-color: #191e20;
+  -ms-overflow-style: none;
 }
 
-/*品牌故事*/
-.home-brand-story .large-title {
-  margin-bottom: 25px;
+body {
+  background: linear-gradient(
+    90deg,
+    #fffcfb 0%,
+    #fad9cb 7%,
+    #f6baa0 15%,
+    #f39f7a 23%,
+    #f0885a 31%,
+    #ed7541 40%,
+    #eb672d 50%,
+    #ea5d1f 62%,
+    #e95716 76%,
+    #e95514 100%
+  );
+}
+.screen {
+  height: 100vh;
+  overflow-y: hidden !important;
 }
 
-/*品牌故事區*/
-.home-brand-story {
-  display: inline-flex;
-  margin: 300px 15.5vw 0;
-}
-.home-brand-pic {
-  width: 80%;
-  margin-top: 35px;
-  margin-right: 15px;
-}
-.home-brand-story-text1,
-.home-brand-story-text2 {
-  margin-bottom: 5vw;
-}
-.home-brand-story-text2 {
-  margin-left: 60px;
-}
-.home-brand-story-2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin: 0 15.5vw;
-}
-/*最新消息區*/
-.bg-red {
-  background-image: url(../img/news-background.png);
-
-  position: relative;
+.open-animate {
+  display: block;
+  height: 100vh;
   width: 100vw;
-  height: 1725px;
+  background-image: url(../img/firstpage.png);
   background-size: cover;
 }
-.news-texts p {
-  color: #191e20;
-}
-.home-lastest-news {
-  margin: 100px 15.5vw 0;
-}
-.news-date {
-  border: 1px solid #9d9d9d;
-  border-radius: 10px;
-  padding: 15px 25px 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #ffffff;
-  color: #9d9d9d;
-  font-family: "Noto Serif Tc";
-}
-.date {
-  font-weight: 700;
-  font-size: 30px;
-  letter-spacing: 0.06em;
-}
-.month {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 34px;
-  letter-spacing: 0.06em;
-}
-.home-news-title {
-  display: inline-flex;
-  align-items: flex-end;
-  margin-bottom: 40px;
-}
-.home-news-title .large-title {
-  margin-right: 10px;
-}
-.home-news-boxes-group {
-  border: 1px solid #9d9d9d;
-  background-color: #ffffff;
-  padding: 30px 50px;
-  margin: 0 auto;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  display: inline-flex;
-  position: relative;
-}
-.home-news-boxes-group:hover,
-.home-news-boxes-group:hover .news-date {
-  background-color: #b5253e;
-  transition-duration: 500ms;
-}
-.home-news-boxes-group:hover .news-texts .little-title,
-.home-news-boxes-group:hover .news-texts hr,
-.home-news-boxes-group:hover .news-texts .text {
-  color: #ffffff;
-  transition-duration: 500ms;
-}
-.home-news-boxes-group hr {
-  margin: 12.5px 0;
-  color: #9d9d9d;
+.open-animate h1 {
+  color: #ea5514;
 }
 
-.home-news-boxes-img {
-  margin-right: 40px;
-}
-.see-more {
-  display: inline-flex;
-}
-.home-news-boxes-group .see-more img {
-  margin-right: 10px;
-}
-.news-texts {
-  position: relative;
-}
-.news-texts .text {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-}
-.news-texts .little-title {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-}
-.see-more {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-.more-button-line img {
-  vertical-align: top !important;
-}
-.more-button-line {
-  display: inline-block;
-  width: 100%;
-}
-.more-button-line hr {
-  display: inline-block;
-  position: relative;
-  width: 80%;
-  margin-bottom: 15px;
-  align-items: center;
-  border-color: #ffffff;
-}
-.more-button-line p {
-  display: inline-block;
-  color: #ffffff;
-  font-family: "Noto Sans TC";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2vw;
-  line-height: 35px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  align-items: center;
-
-  position: relative;
-  margin: 10px 1%;
-  top: -10px;
+.banner-title {
+  display: block;
+  height: 100vh;
+  width: 100vw;
 }
 
-.more-button-line a:hover a,
-.more-button-line a:hover p {
-  transition-duration: 500ms;
-  color: #9d9d9d;
-}
-
-/*熱銷商品*/
-.hot-products {
-  margin: 200px 15.5vw 0;
-}
-.hot-products .mid-eng-title {
-  position: relative;
-  letter-spacing: 0.2em;
-  top: -20px;
-}
-.hot-products-title {
-  text-align: center;
-}
-
-.hot-products-more {
-  width: 30%;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 100px 0 0;
-}
-.hot-products-more img {
-  position: absolute;
-  -webkit-transition: 500ms ease-in-out;
-  -moz-transition: 500ms ease-in-out;
-  -o-transition: 500ms ease-in-out;
-  transition: 500ms ease-in-out;
-}
-.hot-products-more img:nth-of-type(2):hover {
-  opacity: 0;
-}
-/*輪播*/
-.carousel {
-  height: 50%;
-  margin: 50px 0;
-}
-.carousel-item,
-.carousel-inner {
-  height: 27.5vw;
-}
-.carousel-item {
-  width: 70%;
-  margin: 0 15%;
-}
-.carousel-item img {
-  margin-right: 50px;
-  vertical-align: top;
-}
-.drink-div {
-  width: 55%;
-  height: 100%;
-  margin-top: 10px;
-}
-.drink-title {
-  font-family: "Noto Serif TC";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 25px;
-  letter-spacing: 0.15em;
-
-  margin-bottom: 20px;
-}
-.drink-size-large {
-  font-family: "Noto Sans TC";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-
-  border: #ffffff 1px solid;
-  padding: 0 8px;
-  border-radius: 100px;
-}
-.drink-size-medium {
-  font-family: "Noto Sans TC";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-
-  border: #ffffff 1px solid;
-  padding: 0 6px;
-  border-radius: 100px;
-}
-.drink-money {
-  font-family: "Noto Sans TC";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 35px;
-  letter-spacing: 0.35em;
-
-  margin-left: 5px;
-}
-.drink-p {
-  margin-bottom: 20px;
-}
-.drink-p p {
-  display: inline-block;
-}
-.drink-inform {
-  font-family: "Noto Sans TC";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  /* or 219% */
-
-  letter-spacing: 0.2em;
-}
-.carousel-indicators {
-  position: relative;
-}
-.carousel-indicators {
-  margin-top: 30px;
-}
-.carousel-item div,
-.carousel-item img {
-  display: inline-block;
-}
-.carousel-item p {
-  color: #ffffff;
-}
-
-.more-button-line img {
-  position: absolute;
-  width: 69vw;
-
-  /* CSS3淡出淡入效果,1秒 */
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-
-.more-button-line img:nth-of-type(2):hover {
-  opacity: 0; /*滑鼠滑入時，透明度變0*/
-}
-
-@media (max-width: 991px) {
-  #banner-linecircle {
-    width: 70%;
-    height: auto !important;
-  }
-  .right-icon {
-    display: none;
-  }
-  .right-icon-mobile {
-    display: inherit;
-  }
-
-  .navbar-collapse {
-    height: 100%;
-  }
-  .home-brand-pic {
-    display: none;
-  }
-  .home-brand-story {
-    margin: 150px 15.5vw;
-  }
-  .home-brand-story-text {
-    text-align: center;
-  }
-  .home-brand-story-text2 {
-    margin-left: 0;
-  }
-  .home-brand-story-2 {
-    display: block;
-  }
-  .img-dailycafe {
-    display: none;
-  }
-  .img-hand-coffee {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0 50px;
-  }
-  .home-brand-story-text2 {
-    margin: 0;
-  }
-  .carousel-item > div {
-    display: block;
-  }
-  .carousel-item,
-  .carousel-inner {
-    height: 500px;
-  }
-  .drink-div .drink-title {
-    font-size: 20px;
-  }
-  .drink-p p {
-    font-size: 14px;
-    letter-spacing: 0.1em;
-  }
-  .carousel-item {
-    height: 250px;
-  }
-  .carousel-item img {
-    display: block;
-    margin: auto;
-    margin-bottom: 40px;
-  }
-  .drink-div {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-  }
-  .drink-div p {
-    display: inline-block;
-  }
-  .carousel {
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  .hot-products-title .large-title {
-    line-height: 82px;
-  }
-  .home-news-boxes-group {
-    display: inline-block;
-    width: 100%;
-  }
-  .home-news-boxes-img {
-    display: flex;
-    justify-content: center;
-  }
-  .home-news-boxes-img img {
-    width: 80%;
-  }
-  .news-texts p,
-  .news-texts hr {
-    display: none !important;
-  }
-  .home-news-boxes-img {
-    margin: 0;
-  }
-  .drink-inform {
-    font-size: 12px;
-    line-height: 20px;
-  }
-
-  .hot-products-more {
-    width: 125px;
-  }
-  .img-hand-coffee img {
-    width: 225px;
-  }
-  .home-brand-story-text1 {
-    margin-bottom: 50px;
-  }
-  .home-news-boxes-group {
-    padding: 10px 20px;
-  }
-  .news-date {
-    padding: 10px 20px 5px;
-  }
-  .date {
-    font-size: 20px;
-  }
-  .month {
-    font-size: 12px;
-    line-height: 25px;
-  }
-  .bg-red {
-    height: 100%;
-  }
-  .drink-title,
-  .drink-p {
-    margin-bottom: 10px;
-  }
-  .home-brand-story {
-    margin: 100px 15.5vw;
-  }
-  #banner-linecircle {
-    width: 100%;
-    height: auto !important;
-  }
-  .home-news-boxes-group {
-    margin-bottom: 20px;
-  }
-  .more-button-line img {
-    transform: translateY(-25px);
-  }
-}
-
-#banner-linecircle {
-  height: 60%;
-  position: absolute;
-  margin: auto;
+.open-animate {
+  height: 100vh;
   display: flex;
-}
-.my-banner {
-  width: 100%;
-  height: 90vh;
-  background-image: url(../img/banner-background.png);
-  background-size: cover;
-  display: flex;
-  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
   justify-content: center;
 }
 
-@media (min-width: 1441px) {
-  #banner-bg {
-    width: 100%;
-  }
+.banner-title-first {
+  height: 100vh;
+  display: block;
 }
-@media (max-width: 566px) {
+.banner-title-first h1 {
+  padding-top: calc(50vh - 70px);
+  text-align: center;
+}
+.banner-title-first p {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/*開場文字js動畫*/
+.h1-disappear {
+  opacity: 0;
+  transition-duration: 500ms;
+}
+.h1-back {
+  opacity: 1;
+  transition-duration: 500ms;
+}
+
+.top-columns {
+  display: none !important;
+}
+.columns {
+  display: flex;
+  width: 100vw;
+}
+.icon-column {
+  display: block;
+  width: 20vw;
+  background-color: #fffcfb;
+}
+.icon-column > div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 15%;
+}
+.icon-column img {
+  width: 30%;
+}
+
+/*第一偵滿版左方nav列*/
+.banner-title-leftnav {
+  position: absolute;
+  display: flex;
+  width: 100vh;
+  rotate: 90deg;
+  transform-origin: 0%;
+  padding-bottom: 100px;
+}
+.leftnav-button {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.leftnav-button h4 {
+  display: inline-block;
 }
