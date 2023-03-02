@@ -132,7 +132,7 @@ document.querySelector(".icon-smallin").addEventListener("click", function () {
 });
 
 document
-  .querySelector(".icon-icon-heart-valve")
+  .querySelector(".icon-heart-valve")
   .addEventListener("click", function () {
     document
       .querySelector(".js-heart-valve")

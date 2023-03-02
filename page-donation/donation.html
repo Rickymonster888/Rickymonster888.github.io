@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Donation</title>
+    <link rel="icon" type="image/x-icon" href="../img/icon-grid/lungs.png" />
 
     <link href="../css/reset.css" rel="stylesheet" />
     <link href="../css/text-guide.css" rel="stylesheet" />
@@ -64,6 +65,12 @@
         <img src="../img/return-hover.png" />
         <img src="../img/return.png" />
       </div>
+
+      <div class="mobile-donate-title">
+        <h1 class="alice">Donate</h1>
+        <img src="../img/mobile-img/intro-title.png" width="100%" />
+      </div>
+
       <div class="single-page">
         <div class="title-donation">
           <img src="../img/title-donate.png" />
@@ -77,7 +84,12 @@
 
             <div>
               <p class="l-text noto-serif-tc">國民身分證統一編號 *</p>
-              <input type="text" name="identity-number" required />
+              <input
+                type="text"
+                name="identity-number"
+                required
+                pattern="[A-Z]{1}[0-9]{9}"
+              />
             </div>
 
             <div>
@@ -92,7 +104,12 @@
 
             <div>
               <p class="l-text noto-serif-tc">手機號碼 *</p>
-              <input type="text" name="cellphone" required />
+              <input
+                type="text"
+                name="cellphone"
+                required
+                pattern="[0-9]{10}"
+              />
             </div>
           </div>
 
@@ -133,10 +150,20 @@
 
         <iframe id="ifame" name="iframe" style="display: none"></iframe>
       </div>
+      <img
+        src="../img/mobile-img/intro-end.png"
+        class="mobile-donation-img"
+        width="100%"
+      />
     </div>
 
     <!--page3/選擇捐贈器官-->
     <div class="page-bg page3-choose">
+      <div class="mobile-donate-title">
+        <h1 class="alice">Donate</h1>
+        <img src="../img/mobile-img/intro-title.png" width="100%" />
+      </div>
+
       <div class="back-button lastpage-3">
         <img src="../img/return-hover.png" />
         <img src="../img/return.png" />
@@ -379,6 +406,11 @@
           </div>
         </div>
       </div>
+      <img
+        src="../img/mobile-img/intro-end.png"
+        class="mobile-donation-img"
+        width="100%"
+      />
     </div>
 
     <script src="./js/donation.js"></script>

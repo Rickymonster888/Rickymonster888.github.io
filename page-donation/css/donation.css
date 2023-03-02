@@ -39,7 +39,7 @@ textarea::-webkit-scrollbar,
 }
 .title-donation {
   display: inline-flex;
-  width: 350px;
+  width: 300px;
   height: 100%;
   align-items: center;
 }
@@ -48,7 +48,7 @@ textarea::-webkit-scrollbar,
   align-content: center;
   justify-content: flex-end;
   display: inline-flex;
-  width: calc(100% - 350px);
+  width: calc(100% - 300px);
 
   flex-wrap: wrap;
 }
@@ -149,7 +149,7 @@ textarea::-webkit-scrollbar,
 
 .inputs-left {
   display: inline-flex;
-  width: 37.5%;
+  width: 40%;
   height: 60%;
   flex-direction: column;
 
@@ -302,9 +302,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .icon-solid-appear {
   opacity: 1 !important;
 }
-.choose-content div div div:hover {
-  cursor: pointer;
-}
+
 .icon-lung:hover .icon-solid,
 .icon-tendon:hover .icon-solid,
 .icon-box-bone:hover .icon-solid,
@@ -317,24 +315,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .icon-heart:hover .icon-solid,
 .icon-pancreas:hover .icon-solid,
 .icon-smallin:hover .icon-solid {
-  opacity: 1;
-  transition: ease-in-out 500ms;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: ease-in-out 300ms;
 }
 
-.icon-lung:active img,
-.icon-tendon:active img,
-.icon-box-bone:active img,
-.icon-blood:active img,
-.icon-kidney:active img,
-.icon-liver:active img,
-.icon-skin:active img,
-.icon-cornea:active img,
-.icon-trachea:active img,
-.icon-heart:active img,
-.icon-pancreas:active img,
-.icon-smallin:active img {
-  transform: scale(1.1);
-  transition: 1ms ease-out !important;
+.icon-lung:active .icon-solid,
+.icon-tendon:active .icon-solid,
+.icon-box-bone:active .icon-solid,
+.icon-blood:active .icon-solid,
+.icon-kidney:active .icon-solid,
+.icon-liver:active .icon-solid,
+.icon-skin:active .icon-solid,
+.icon-cornea:active .icon-solid,
+.icon-trachea:active .icon-solid,
+.icon-heart:active .icon-solid,
+.icon-pancreas:active .icon-solid,
+.icon-smallin:active .icon-solid {
+  opacity: 1;
 }
 
 .icon-box-bone .icon-solid {
@@ -565,6 +563,9 @@ dialog {
   top: 4vh;
   left: 40px;
 }
+#precaution-close img:hover {
+  cursor: pointer;
+}
 
 .caution-open-animation {
   display: block !important;
@@ -687,6 +688,25 @@ dialog {
   animation-fill-mode: forwards;
 }
 
+.mobile-donate-title {
+  width: 100vw;
+  height: fit-content;
+  position: relative;
+  top: 3px;
+  display: none;
+}
+
+.mobile-donate-title h1 {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  text-align: center;
+}
+
+.mobile-donation-img {
+  display: none;
+}
+
 @keyframes alertopen {
   0% {
     opacity: 0;
@@ -702,5 +722,237 @@ dialog {
   }
   0% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 1600px) {
+  .single-page {
+    width: calc(100vw - 300px);
+    padding: 7.5vh 150px;
+  }
+  .title-donation {
+    width: 200px;
+  }
+  .title-donation img {
+    height: 250px;
+  }
+  .precaution-content,
+  .input-content,
+  .choose-content {
+    width: calc(100% - 200px);
+  }
+  .nextpage-button img {
+    width: 175px;
+  }
+  .precaution-content p {
+    height: 60vh;
+  }
+  .nextpage-1 {
+    right: calc(175px + 151px);
+  }
+  .nextpage-2 {
+    right: calc(175px + 145px);
+  }
+
+  .input-content input[type="text"],
+  .input-content input[type="date"],
+  .input-content input[type="email"] {
+    font-size: 18px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+  }
+  .input-content p {
+    overflow-x: scroll;
+    width: 100%;
+    height: 40px;
+  }
+  .choose-left {
+    width: calc(100% - 375px);
+  }
+  .choose-right {
+    width: 325px;
+  }
+  .choose-buttons {
+    width: 105%;
+  }
+  .choose-buttons button {
+    width: 155px;
+    height: 50px;
+    padding: 0px 20px;
+  }
+  .choose-right span a {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .choose-content textarea {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .page1-precaution,
+  .title-donation {
+    display: none;
+  }
+  .page-bg {
+    height: auto;
+  }
+  .single-page {
+    height: 1600px;
+  }
+  .input-content,
+  .choose-content {
+    width: 100%;
+    flex-direction: column;
+  }
+  .inputs-left,
+  .inputs-right,
+  #checkbox-input {
+    width: 100%;
+  }
+  .single-page {
+    background-image: none;
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.8) -11.63%,
+      rgba(156, 220, 107, 0.7) 17.89%,
+      rgba(248, 134, 95, 0.5) 127.12%
+    );
+  }
+  .input-content input[type="text"],
+  .input-content input[type="date"],
+  .input-content input[type="email"] {
+    height: 20px;
+    padding: 1vh 15px;
+  }
+  .input-content div div,
+  #checkbox-input {
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .nextpage-button {
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    position: relative;
+    bottom: -40vw;
+    right: unset;
+
+    justify-content: center;
+  }
+  .choose-content {
+    height: auto;
+  }
+  .choose-left {
+    width: 100%;
+  }
+  .choose-right {
+    width: 100%;
+    margin: 0;
+    height: unset;
+  }
+  .choose-right-up {
+    display: block;
+    margin-top: 50px;
+  }
+  .choose-right-text {
+    margin-top: 20px;
+    height: unset;
+  }
+  .choose-right #checkbox-input {
+    height: unset;
+    margin-top: 20px;
+  }
+  .choose-buttons {
+    margin-top: 550px;
+  }
+  .choose-buttons button {
+    width: 40%;
+    height: 80px;
+    padding: 0px 5vw;
+  }
+
+  .mobile-donate-title,
+  .mobile-donation-img {
+    display: block;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .single-page {
+    width: calc(100vw - 100px);
+    padding: 7.5vh 50px;
+  }
+  .choose-left {
+    height: unset;
+  }
+  .choose-left > p {
+    height: unset;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .choose-left > div {
+    display: flex;
+    width: 100%;
+    height: 1050px;
+    overflow-x: unset;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .choose-left > div > div {
+    width: 40%;
+    padding: 0 5%;
+    height: 600px;
+    align-items: center;
+    align-content: center;
+  }
+  .icon-first img {
+    height: 60px;
+  }
+  .icon-second img,
+  .icon-smallin > div {
+    height: 80px;
+  }
+  .icon-box-bone img {
+    height: 180px;
+  }
+  .icon-box-bone {
+    justify-content: flex-start;
+  }
+  .icon-box-bone .icon-solid {
+    top: unset;
+  }
+  .icon-box-small img {
+    height: 45px;
+  }
+  .icon-skin img {
+    height: 70px;
+  }
+  .icon-kidney img {
+    height: 65px;
+    margin-top: 10px;
+  }
+  .icon-box-small {
+    height: 110px;
+  }
+  .choose-buttons {
+    margin-top: unset;
+    justify-content: center;
+    margin-top: 2vh;
+  }
+  #cancel-button {
+    display: none;
+  }
+  .choose-buttons button {
+    width: 200px;
+  }
+  .choose-buttons button h4,
+  .choose-buttons button p {
+    font-size: 20px;
+  }
+  .choose-content textarea {
+    padding-bottom: 100px;
   }
 }
