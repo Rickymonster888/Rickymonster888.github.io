@@ -72,9 +72,6 @@ const part4bgorange = (entries, observer3) => {
 let observer3 = new IntersectionObserver(part4bgorange);
 observer3.observe(chagebgtrigger);
 
-let observer4 = new IntersectionObserver(part4bgorange2);
-observer3.observe(document.querySelector);
-
 const dialogmask = document.querySelector(".process-dialog-mask");
 
 dialogmask.addEventListener("click", function () {
