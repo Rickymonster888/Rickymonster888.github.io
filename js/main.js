@@ -25,14 +25,15 @@ part5openbutton.addEventListener("click", function () {
 });
 
 const part0 = document.querySelector(".part0");
-const nav = document.querySelector("nav");
+const navorange = document.querySelector(".nav-orange");
 
 const navfix = (entries, observer) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
-      nav.classList.add("fixed"); //開場動畫觸發後顯示nav並固定
+      navorange.classList.add("fixed");
+      document.querySelector(".nav-white").classList.add("fixed"); //開場動畫觸發後顯示nav並固定
       part0.style = "display:none"; //開場動畫觸發後將隱藏
-      document.querySelector(".mobile-nav").add("fixed");
+      document.querySelector(".mobile-nav").classList.add("fixed");
     } else {
       nav.classList.remove("fixed");
     }
@@ -41,6 +42,29 @@ const navfix = (entries, observer) => {
 let observer = new IntersectionObserver(navfix);
 observer.observe(part0);
 
+//*控制桌機nav變色
+const NavChangecolor = (entries, NavColorObserver) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      document.querySelector(".nav-white").classList.remove("appear");
+      document.querySelector(".nav-white").classList.add("disappear");
+      document.querySelector(".nav-white").classList.add("nav-tab-appear");
+
+      navorange.classList.add("appear");
+      navorange.classList.remove("disappear");
+    } else {
+      document.querySelector(".nav-white").classList.add("appear");
+      document.querySelector(".nav-white").classList.remove("nav-tab-appear");
+      document.querySelector(".nav-white").classList.remove("disappear");
+      navorange.classList.add("disappear");
+      navorange.classList.remove("appear");
+    }
+  });
+};
+let NavColorObserver = new IntersectionObserver(NavChangecolor);
+NavColorObserver.observe(document.getElementById("tabnavs-trigger"));
+
+const navwhite = document.querySelector(".nav-white");
 const introbody = document.querySelector("#part4-trigger");
 const introbuttoncolor = (entries, observer2) => {
   entries.forEach((entry) => {
@@ -62,9 +86,13 @@ const chagebgtrigger = document.querySelector("#intro-trigger2");
 const part4bgorange = (entries, observer3) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
+      navorange.classList.remove("nav-tab-appear");
+      navwhite.classList.remove("nav-tab-appear");
     } else {
       outerwrapper.classList.remove("no-background");
       outerwrapper.classList.add("orange-background");
+      navorange.classList.add("nav-tab-appear");
+      navwhite.classList.add("nav-tab-appear");
     }
   });
 };

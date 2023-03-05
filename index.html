@@ -57,13 +57,11 @@
     </div>
 
     <!--手機版nav-->
-
     <div class="mobile-nav">
       <span id="mobile-nav-open"
         ><img src="./img/mobile-img/nav-hamburger.png"
       /></span>
     </div>
-
     <div class="mobile-navlist">
       <div class="mobile-navlist-block">
         <span id="mobile-nav-close"
@@ -71,6 +69,11 @@
         /></span>
       </div>
 
+      <a href="#home"
+        ><div class="mobile-navlist-box">
+          <p class="l-text noto-serif-tc">首頁</p>
+        </div></a
+      >
       <a href="#part2-process-title"
         ><div class="mobile-navlist-box">
           <p class="l-text noto-serif-tc">過程</p>
@@ -91,31 +94,55 @@
     </div>
 
     <!--part1-第一偵滿版標題+navigation-->
-    <div class="part1-fulltitle section">
-      <h1 class="alice">Give Live & Believe</h1>
+    <div class="part1-fulltitle section" id="home">
+      <h1 class="alice">
+        <span>Give </span><span>Live</span><span>&</span><span>Believe</span>
+      </h1>
       <p class="s-text noto-serif-tc">
         一切殞落，同時也滋養著另一個生機。在離開之前，留下一部分的自己，成為另一個生命的養分。
         <br />所謂遺愛人間，便是捐贈器官，同時積累一份善意。
       </p>
 
-      <nav class="">
+      <nav id="nav-bubble-bg">
+        <span id="nav-bubble" class="bubblein2 bubble2to1"></span>
+      </nav>
+
+      <!--橘色桌機nav-->
+      <nav class="nav-orange appear">
+        <div>
+          <a href="#home"><img src="./img/nav-home.png" /></a>
+        </div>
         <div>
           <a href="#part2-process-title"><img src="./img/nav-process.png" /></a>
         </div>
         <div>
           <a href="#part4"><img src="./img/nav-intro.png" /></a>
         </div>
+      </nav>
 
+      <!--白色桌機nav-->
+
+      <nav class="nav-white disappear mobile-nav-appear">
         <div>
-          <a href="#intro-donation-button"
-            ><img src="./img/nav-donate.png"
+          <a href="#home"><img src="./img/nav-white-home.png" /></a>
+        </div>
+        <div>
+          <a href="#part2-process-title"
+            ><img src="./img/nav-white-process.png"
           /></a>
+        </div>
+        <div>
+          <a href="#part4"><img src="./img/nav-white-intro.png" /></a>
         </div>
       </nav>
     </div>
+
     <!--part2-process部分副標-->
     <div class="part2-process-title" id="part2-process-title">
-      <h2 class="alice">Organ Donation <br />Process</h2>
+      <h2 class="alice" id="bubbleinto2">
+        Organ Donation <br />
+        Process
+      </h2>
     </div>
     <!--part3-器官圖-->
     <div class="part3-process-organ">
@@ -240,6 +267,7 @@
       <div class="outer-wrapper stop-scroll no-background" id="outer-wrapper">
         <div class="wrapper" id="part4">
           <div id="part4-trigger"></div>
+          <div id="tabnavs-trigger"></div>
           <div class="part4-one">
             <div id=""></div>
             <img src="./img/Organ-Donation-Process.png" id="part4title" />
@@ -304,6 +332,7 @@
                 依據人體器官移植條例施行細則規定，可移植的器官類目包括：心臟、肺臟、肝臟、腎臟、胰臟、小腸、眼角膜、皮膚、骨骼及其他經中央衛生主管機關指定之類目。
               </p>
             </div>
+            <div id="navnone-trigger"></div>
           </div>
 
           <div class="intro-body-end">
