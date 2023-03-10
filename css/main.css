@@ -351,7 +351,7 @@ body {
   position: absolute;
   bottom: calc(40vh + 10px);
 }
-#change-anime h4::after {
+#change-anime a::after {
   content: "";
   opacity: 0;
   display: block;
@@ -365,12 +365,12 @@ body {
   z-index: -1;
   transition: cubic-bezier(0.215, 0.61, 0.355, 1) 300ms;
 }
-#change-anime h4:hover::after {
+#change-anime a:hover::after {
   opacity: 0.1;
   cursor: pointer;
 }
 @media (max-width: 1600px) {
-  #change-anime h4::after {
+  #change-anime a::after {
     width: 150px;
     height: 50px;
     top: calc(50% - 27.5px);
