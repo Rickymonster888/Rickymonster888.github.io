@@ -169,6 +169,13 @@ section:nth-child(1) {
       right: 140px;
     }
   }
+  #slogan {
+    position: absolute;
+    width: 63px;
+    opacity: 0;
+    left: 675px;
+    top: 270px;
+  }
 }
 
 section:nth-child(2) {

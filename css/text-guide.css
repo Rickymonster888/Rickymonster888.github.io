@@ -1,11 +1,15 @@
 /*Alice-font-setting*/
 @font-face {
   font-family: "Alice";
-  src: url(../font/Alice.eot) format("embedded-opentype"),
-    url(../font/Alice.ttf) format("truetype"),
-    url(../font/Alice.woff) format("woff");
+  src: url(../font/Alice/Alice.eot) format("embedded-opentype"),
+    url(../font/Alice/Alice.ttf) format("truetype"),
+    url(../font/Alice/Alice.woff) format("woff");
 }
 
+@font-face {
+  font-family: "Noto Serif TC";
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
+}
 /*標題*/
 h1 {
   font-weight: 400;
