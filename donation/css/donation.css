@@ -657,6 +657,10 @@ dialog {
   background-color: transparent;
   border: #ffffff 1px solid;
 }
+.cancel-alert button a,
+.donate-alert button a {
+  color: #ffffff;
+}
 /*警告窗按鈕hover*/
 .cancel-alert button:hover {
   background: #ffffff45;
