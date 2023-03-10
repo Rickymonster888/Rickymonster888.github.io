@@ -27,32 +27,20 @@
 
       <section class="part0-titleanime section">
         <div><h1 class="alice part0-title">Organ Donation</h1></div>
-        <a href="#part0-spans">
+        <a href="#change-anime">
           <img src="./img/part0-scroll.png" class="part0-strollanime"
         /></a>
       </section>
 
-      <div class="container section" id="part0-spans">
-        <span style="--i: 0">
-          <div><img src="./img/icon-solid/lungs.png" /></div>
-          <div><img src="./img/icon-solid/pancreas.png" /></div>
-        </span>
-        <span style="--i: 1">
-          <div><img src="./img/icon-solid/tendon.png" /></div>
-          <div><img src="./img/icon-solid/cornea.png" /></div>
-        </span>
-        <span style="--i: 2">
-          <div><img src="./img/icon-solid/heart-valve.png" /></div>
-          <div><img src="./img/icon-solid/heart.png" /></div>
-        </span>
-        <span style="--i: 3">
-          <div><img src="./img/icon-solid/trachea.png" /></div>
-          <div><img src="./img/icon-solid/kidney.png" /></div>
-        </span>
-        <span style="--i: 4">
-          <div><img src="./img/icon-solid/liver.png" /></div>
-          <div><img src="./img/icon-solid/small-intesline.png" /></div>
-        </span>
+      <div id="change-anime">
+        <span id="change-anime-border"></span>
+        <div>
+          <img src="./img/changeanime-solidheart.png" id="shine" />
+          <div id="fillup-anime"></div>
+          <span><img src="./img/changeanime-lineheart.png" /></span>
+        </div>
+        <h4 class="alice" id="click-me-a"><a href="#home">Click me</a></h4>
+        <span id="stop-scroll-trigger"></span>
       </div>
     </div>
 
@@ -122,7 +110,7 @@
 
       <!--白色桌機nav-->
 
-      <nav class="nav-white disappear mobile-nav-appear">
+      <nav class="nav-white disappear nav-tab-appear">
         <div>
           <a href="#home"><img src="./img/nav-white-home.png" /></a>
         </div>
@@ -236,6 +224,7 @@
         src="./img/process-organ/process-lung.png"
         width="78%"
       />
+
       <img
         id="process-heart"
         src="./img/process-organ/process-heart.png"
@@ -261,11 +250,57 @@
         src="./img/process-organ/process-small-intesline.png"
         width="65%"
       />
+
+      <!--點擊指示-->
+      <span id="pulse-effect-lung">
+        <div class="pulse-effect">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </span>
+
+      <span id="pulse-effect-heart">
+        <div class="pulse-effect">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </span>
+
+      <span id="pulse-effect-liver">
+        <div class="pulse-effect">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </span>
+
+      <span id="pulse-effect-kidney">
+        <div class="pulse-effect">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </span>
+
+      <span id="pulse-effect-small">
+        <div class="pulse-effect">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </span>
     </div>
 
     <div class="page4" id="page4">
       <div class="outer-wrapper stop-scroll no-background" id="outer-wrapper">
-        <div class="wrapper" id="part4">
+        <div class="wrapperpart4" id="part4">
           <div id="part4-trigger"></div>
           <div id="tabnavs-trigger"></div>
           <div class="part4-one">
@@ -300,7 +335,7 @@
               </p>
             </div>
 
-            <div class="intro-tip">
+            <div class="intro-tip" id="intro-trigger3">
               <div>
                 <img src="./img/part5-titleframe.png" />
                 <h3 class="noto-serif-tc">器官捐贈有哪些種類？</h3>
@@ -340,7 +375,7 @@
           </div>
 
           <div class="intro-donation-button" id="intro-donation-button">
-            <a href="./page-donation/donation.html" target="_blank"
+            <a href="./donation/index.html" target="_blank"
               ><img src="./img/intro-donate.png" height="100%" />
               <img src="./img/intro-donate-hover.png" height="100%"
             /></a>
