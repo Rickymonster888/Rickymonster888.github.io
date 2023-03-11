@@ -312,7 +312,7 @@ body {
   z-index: 8;
 }
 .spin {
-  animation: spin 10s linear forwards;
+  animation: spin 8s linear forwards;
 }
 @keyframes spin {
   0% {
@@ -395,7 +395,7 @@ body {
 }
 .change-clickme {
   animation: changeclick 1s forwards;
-  animation-delay: 7s;
+  animation-delay: 4.5s;
 }
 
 @keyframes changeclick {
