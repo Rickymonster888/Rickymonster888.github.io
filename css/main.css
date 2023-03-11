@@ -420,6 +420,11 @@ body {
 .after-part0 {
   display: none;
 }
+@media (width: 1024px) {
+  .after-part0 {
+    display: unset;
+  }
+}
 
 /*part2-process副標*/
 .part2-process-title {
