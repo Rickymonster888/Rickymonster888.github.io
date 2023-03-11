@@ -267,7 +267,6 @@ body {
   height: 350px;
   border: #e95514 1px solid;
   border-radius: 100%;
-
   z-index: 100;
 }
 #change-anime > div {
@@ -329,7 +328,7 @@ body {
 .shine {
   animation: Shine 500ms;
   animation-fill-mode: forwards;
-  animation-delay: 6.5s;
+  animation-delay: 4.5s;
 }
 @keyframes Shine {
   0% {
@@ -420,7 +419,7 @@ body {
 .after-part0 {
   display: none;
 }
-@media (width: 1024px) {
+@media (max-width: 1024px) {
   .after-part0 {
     display: unset;
   }
@@ -902,6 +901,13 @@ body {
 
   line-height: 42px;
 }
+.process-dialog hr {
+  display: none;
+  border: 0.25px #ffffff solid;
+}
+#mobilepart3-grid {
+  display: none;
+}
 @media (max-width: 1024px) {
   .process-dialog {
     width: 80vw;
@@ -922,14 +928,27 @@ body {
   .process-dialog img {
     top: 15%;
   }
+  .process-dialog hr {
+    display: block;
+    position: relative;
+    top: 42.5%;
+    margin: 0 15px;
+    opacity: 0.5;
+  }
   .process-dialog p {
-    top: 40%;
-    border-top: #ffffff76 0.75px solid;
+    top: 52.5%;
+    height: 25%;
     padding: 15px;
-
     left: 10%;
   }
+  #mobilepart3-grid {
+    display: block;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+  }
 }
+
 /*part4-頁面最底遮罩*/
 
 #part4-mask {
@@ -1570,6 +1589,14 @@ body {
     line-height: 32px;
   }
 }
+@media (max-width: 450px) {
+  .part1-fulltitle h1 {
+    font-size: 24px;
+  }
+  .part1-fulltitle h1 span {
+    margin: 0 7.5px;
+  }
+}
 @media (max-width: 1024px) {
   .part0,
   .page4 {
@@ -1583,6 +1610,19 @@ body {
   .part1-fulltitle .nav-orange,
   .part1-fulltitle .nav-white {
     display: none;
+  }
+  .mobile-intro {
+    margin-top: unset;
+  }
+  .part1-fulltitle {
+    padding: 0 15px;
+    width: calc(100vw - 30px);
+  }
+  .part1-fulltitle h1 {
+    width: calc(100vw - 30px);
+  }
+  .part1-fulltitle p {
+    width: calc(100vw - 30px);
   }
 }
 @media (max-width: 768px) {
