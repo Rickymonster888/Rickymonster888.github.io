@@ -211,7 +211,6 @@ const ChangePageStopScroll = (entries, ChangePagetricker) => {
     if (!entry.isIntersecting) {
       document.body.classList.remove("stop-scrolling");
     } else {
-      document.body.classList.add("stop-scrolling");
       document.getElementById("fillup-anime").classList.add("spin");
       document.getElementById("shine").classList.add("shine");
       document.getElementById("click-me-a").classList.add("change-clickme");
@@ -220,3 +219,7 @@ const ChangePageStopScroll = (entries, ChangePagetricker) => {
 };
 let ChangePagetricker = new IntersectionObserver(ChangePageStopScroll);
 ChangePagetricker.observe(document.getElementById("stop-scroll-trigger"));
+
+document.querySelector("#click-me-a").addEventListener("click", function () {
+  document.querySelector("#after-part0").classList.remove("after-part0");
+});

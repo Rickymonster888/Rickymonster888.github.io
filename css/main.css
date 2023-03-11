@@ -7,10 +7,6 @@ html {
 ::-webkit-scrollbar {
   display: none;
 }
-.stop-scrolling {
-  height: 100%;
-  overflow: hidden;
-}
 
 body {
   overscroll-behavior: none;
@@ -257,7 +253,7 @@ body {
   position: relative;
   top: 0;
   width: 100vw;
-  height: 120vh;
+  height: 100vh;
   background: #fffcfb;
 }
 #change-anime-border {
@@ -327,7 +323,7 @@ body {
   width: 10px;
   height: 2vh;
   position: absolute;
-  bottom: calc(20vh + 10px);
+  bottom: 10px;
   left: 0;
 }
 .shine {
@@ -349,7 +345,7 @@ body {
   left: 40vw;
   text-align: center;
   position: absolute;
-  bottom: calc(40vh + 10px);
+  bottom: calc(20vh + 10px);
 }
 #change-anime a::after {
   content: "";
@@ -419,6 +415,10 @@ body {
   #change-anime img {
     width: 75px;
   }
+}
+
+.after-part0 {
+  display: none;
 }
 
 /*part2-process副標*/
@@ -1675,4 +1675,4 @@ body {
     width: 40px;
     height: 40px;
   }
-} ;
+}
