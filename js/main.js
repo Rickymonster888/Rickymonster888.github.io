@@ -222,4 +222,5 @@ ChangePagetricker.observe(document.getElementById("stop-scroll-trigger"));
 
 document.querySelector("#click-me-a").addEventListener("click", function () {
   document.querySelector("#after-part0").classList.remove("after-part0");
+  document.querySelector("#page4").classList.remove("after-part0");
 });
