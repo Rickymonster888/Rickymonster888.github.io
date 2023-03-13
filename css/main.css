@@ -1408,7 +1408,7 @@ body {
 .mobile-intro > img,
 .mobile-donate img {
   position: relative;
-  top: 2.945px;
+  display: block;
   z-index: 0;
 }
 .mobile-intro-mask {
@@ -1451,7 +1451,7 @@ body {
 .mobile-donate-block {
   display: block;
   width: 100vw;
-  height: 200px;
+  height: 50px;
 }
 .mobile-intro .intro-tip > div {
   display: flex;
@@ -1473,16 +1473,13 @@ body {
 .mobile-intro .introtiptext3-1 {
   padding-bottom: 30px;
 }
-#mobile-intro-end {
-  top: -15.1vh;
-}
 .mobile-donate {
   position: relative;
   width: 100vw;
 }
 #mobile-donate-end {
   position: relative;
-  top: -1px;
+  display: block;
 }
 
 /*手機版nav*/
@@ -1494,6 +1491,37 @@ body {
   padding: 5vh 5vw;
   z-index: 100;
 }
+.mobile-nav-stroll {
+  animation: mobilenavstroll 300ms ease-in;
+  animation-fill-mode: forwards;
+}
+@keyframes mobilenavstroll {
+  from {
+    padding: 5vh 5vw;
+    background: rgba(217, 217, 217, 0);
+  }
+  to {
+    padding: 0vh 5vw;
+    background: rgba(217, 217, 217, 0.22);
+  }
+}
+.hamberger {
+  animation: hamberger 300ms;
+  animation-fill-mode: forwards;
+}
+@keyframes hamberger {
+  from {
+    height: 35px;
+    left: 18px;
+    top: 19px;
+  }
+  to {
+    height: 20px;
+    left: 5px;
+    top: 20px;
+  }
+}
+
 .mobile-nav span {
   display: block;
   position: relative;
@@ -1516,7 +1544,6 @@ body {
 }
 .mobile-nav span::before,
 .mobile-navlist-block span::before {
-  content: "";
   position: absolute;
   display: block;
   opacity: 0;
@@ -1554,6 +1581,7 @@ body {
   background: rgba(217, 217, 217, 0.139);
   backdrop-filter: blur(46.6107px);
 }
+
 .mobile-navlist-box {
   display: flex;
   width: 100vw;
@@ -1579,6 +1607,7 @@ body {
 .nav-tab-appear {
   display: none !important;
 }
+
 @media (max-width: 1600px) {
   .part1-fulltitle .nav-white,
   .part1-fulltitle .nav-orange {
@@ -1720,4 +1749,44 @@ body {
     width: 40px;
     height: 40px;
   }
+}
+
+.nextpage-button {
+  display: block;
+  position: relative;
+}
+
+.nextpage-button img {
+  position: absolute;
+  width: 250px;
+  left: calc(50vw - 125px);
+  top: 100px;
+
+  -webkit-transition: opacity 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out;
+  -o-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+}
+.nextpage-button img:last-child:hover {
+  opacity: 0;
+}
+@media (max-width: 768px) {
+  .nextpage-button img {
+    width: 150px;
+    left: calc(50vw - 75px);
+  }
+}
+@media (max-width: 375px) {
+  .nextpage-button img {
+    width: 80px;
+    left: calc(50vw - 40px);
+  }
+}
+.hamberger2 {
+  padding: 0vh 5vw !important;
+}
+.hamberger3 {
+  height: 20px !important;
+  left: 5px !important;
+  top: 20px !important;
 }

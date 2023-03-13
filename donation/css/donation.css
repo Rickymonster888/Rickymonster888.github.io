@@ -813,6 +813,11 @@ dialog {
   .inputs-right,
   #checkbox-input {
     width: 100%;
+    justify-content: unset;
+    height: unset;
+  }
+  .input-content {
+    justify-content: unset;
   }
   .single-page {
     background-image: none;
@@ -867,20 +872,56 @@ dialog {
     margin-top: 20px;
   }
   .choose-buttons {
-    margin-top: 550px;
+    margin-top: 150px;
   }
   .choose-buttons button {
-    width: 40%;
+    width: 100%;
     height: 80px;
-    padding: 0px 5vw;
+    padding: 0px 37.5%;
+  }
+  #cancel-button {
+    display: none;
   }
 
   .mobile-donate-title,
   .mobile-donation-img {
     display: block;
   }
-  ::-webkit-scrollbar {
+  ::-webkit-scrollbar,
+  .lastpage-2 {
     display: none;
+  }
+  .dia-open,
+  .caution-open-animation,
+  .dia-comeout {
+    position: fixed;
+  }
+  .dia-precaution-box {
+    width: 80vw;
+    left: 10vw;
+  }
+  .dia-precaution-box > p {
+    width: 85%;
+    padding: 0 7.5%;
+  }
+  .choose-left div div p {
+    margin-top: 2vh;
+  }
+  .donate-alert {
+    position: fixed;
+    width: calc(80vw - 40px);
+    left: 10vw;
+  }
+  .donate-alert > div {
+    width: 40%;
+  }
+  .donate-alert button {
+    width: 40%;
+    height: 30px;
+  }
+  .back-button {
+    top: 30px;
+    left: 30px;
   }
 }
 
@@ -944,19 +985,48 @@ dialog {
   .choose-buttons {
     margin-top: unset;
     justify-content: center;
-    margin-top: 2vh;
+    margin-top: 5vh;
+  }
+  .choose-right span a {
+    font-size: 14px;
+  }
+
+  #checkbox-input input[type="checkbox"] + span {
+    line-height: 18px;
   }
   #cancel-button {
     display: none;
   }
   .choose-buttons button {
-    width: 200px;
+    padding: 0 28.5%;
   }
   .choose-buttons button h4,
   .choose-buttons button p {
     font-size: 20px;
   }
   .choose-content textarea {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+  }
+  .back-button {
+    top: 15px;
+    left: 15px;
+  }
+  .back-button img {
+    width: 12.5vw;
+  }
+}
+@media (max-width: 375px) {
+  .single-page {
+    width: calc(100vw - 60px);
+    padding: 7.5vh 30px;
+  }
+  .donate-alert p {
+    text-align: center;
+  }
+  .donate-alert > div {
+    width: 80%;
+  }
+  .donate-alert button {
+    height: 25px;
   }
 }

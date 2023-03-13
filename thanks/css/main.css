@@ -377,4 +377,163 @@ section:nth-child(3) button img {
   section:nth-child(3) button img {
     width: 25px;
   }
-} ;
+}
+
+@media (max-width: 1024px) {
+  .hand {
+    top: calc(50vh - 540px);
+  }
+  #big-hand {
+    width: 450px;
+    transform: matrix(0.97, 0.25, -0.26, 0.96, 0, 0);
+    top: 430px;
+    left: 140px;
+  }
+  @keyframes BigHand {
+    0%,
+    25% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+      top: 450px;
+      left: 140px;
+    }
+    100% {
+      top: 350px;
+      left: 210px;
+    }
+  }
+  #small-hand {
+    transform: matrix(0.97, 0.25, -0.26, 0.96, 0, 0);
+    width: 500px;
+    top: 85px;
+    right: 140px;
+  }
+  @keyframes SmallHand {
+    0%,
+    25% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+      top: 85px;
+      right: 120px;
+    }
+    100% {
+      opacity: 1;
+      top: 125px;
+      right: 180px;
+    }
+  }
+  #slogan {
+    transform: matrix(0.97, 0.25, -0.26, 0.96, 0, 0);
+    width: 50px;
+    left: 689px;
+    top: 453px;
+  }
+  section:nth-child(2) > div {
+    padding: 0 15px;
+    width: calc(100vw - 30px);
+  }
+  section:nth-child(2) p {
+    width: 100%;
+  }
+  section:nth-child(3) > div {
+    width: 60vw;
+    left: 20vw;
+  }
+}
+@media (max-width: 768px) {
+  section:nth-child(2) > div > div {
+    width: 300px;
+    left: calc(50vw - 150px);
+  }
+  section:nth-child(2) > div > div > a img {
+    width: 25px;
+  }
+  section:nth-child(2) > div > div > a:nth-child(2) img {
+    width: 14px;
+  }
+  section:nth-child(2) > div > div > button img {
+    width: 27.5px;
+  }
+}
+@media (max-width: 375px) {
+  section:nth-child(2) > div > div {
+    width: 250px;
+    left: calc(50vw - 125px);
+  }
+  section:nth-child(2) > div > div > a img {
+    width: 22.5px;
+  }
+  section:nth-child(2) > div > div > a:nth-child(2) img {
+    width: 12.5px;
+  }
+  section:nth-child(2) > div > div > button img {
+    width: 20px;
+  }
+  #big-hand {
+    width: 250px;
+    transform: matrix(0.97, 0.25, -0.26, 0.96, 0, 0);
+    top: 450px;
+    left: 340px;
+  }
+  @keyframes BigHand {
+    0%,
+    25% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+      top: 450px;
+      left: 340px;
+    }
+    100% {
+      top: 400px;
+      left: 430px;
+    }
+  }
+  #small-hand {
+    transform: matrix(0.97, 0.25, -0.26, 0.96, 0, 0);
+    width: 300px;
+    top: 205px;
+    right: 330px;
+  }
+  @keyframes SmallHand {
+    0%,
+    25% {
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+      top: 205px;
+      right: 330px;
+    }
+    100% {
+      opacity: 1;
+      top: 265px;
+      right: 380px;
+    }
+  }
+  #slogan {
+    transform: matrix(0.97, 0.25, -0.26, 0.96, 0, 0);
+    width: 28px;
+    left: 700px;
+    top: 462px;
+  }
+  section:nth-child(3) > div > input {
+    font-size: 13px;
+    height: 10px;
+    padding: 7.5px;
+  }
+  section:nth-child(3) button {
+    width: 110px;
+    height: 30px;
+    padding: 0px 10px;
+    font-size: 12px;
+  }
+  section:nth-child(3) button img {
+    width: 15px;
+  }
+}

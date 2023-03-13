@@ -209,7 +209,6 @@ document
 const ChangePageStopScroll = (entries, ChangePagetricker) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
-      document.body.classList.remove("stop-scrolling");
     } else {
       document.getElementById("fillup-anime").classList.add("spin");
       document.getElementById("shine").classList.add("shine");
@@ -224,3 +223,18 @@ document.querySelector("#click-me-a").addEventListener("click", function () {
   document.querySelector("#after-part0").classList.remove("after-part0");
   document.querySelector("#page4").classList.remove("after-part0");
 });
+
+const mobilenavstroll = (entries, mobilenavstrolltricker) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+    } else {
+      document.getElementById("mobile-nav").classList.add("mobile-nav-stroll");
+      document.getElementById("mobile-nav-block").classList.add("hamberger2");
+
+      document.getElementById("hamberger").classList.add("hamberger");
+      document.getElementById("close-mobile").classList.add("hamberger3");
+    }
+  });
+};
+let mobilenavstrolltricker = new IntersectionObserver(mobilenavstroll);
+mobilenavstrolltricker.observe(document.getElementById("bubbleinto2"));
