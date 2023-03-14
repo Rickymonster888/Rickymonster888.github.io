@@ -172,6 +172,7 @@ document
     document
       .querySelector(".mobile-navlist")
       .classList.add("mobile-nav-appear");
+    document.querySelector("#mobile-nav-open").classList.add("nav-tab-appear");
   });
 
 document
@@ -180,6 +181,9 @@ document
     document
       .querySelector(".mobile-navlist")
       .classList.remove("mobile-nav-appear");
+    document
+      .querySelector("#mobile-nav-open")
+      .classList.remove("nav-tab-appear");
   });
 
 document
