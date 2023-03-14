@@ -187,11 +187,14 @@ document
   });
 
 document
-  .querySelector(".mobile-navlist-box")
+  .querySelector(".mobile-navlist-box1")
   .addEventListener("click", function () {
     document
       .querySelector(".mobile-navlist")
       .classList.remove("mobile-nav-appear");
+    document
+      .querySelector("#mobile-nav-open")
+      .classList.remove("nav-tab-appear");
   });
 
 document
@@ -200,6 +203,9 @@ document
     document
       .querySelector(".mobile-navlist")
       .classList.remove("mobile-nav-appear");
+    document
+      .querySelector("#mobile-nav-open")
+      .classList.remove("nav-tab-appear");
   });
 
 document
@@ -208,6 +214,20 @@ document
     document
       .querySelector(".mobile-navlist")
       .classList.remove("mobile-nav-appear");
+    document
+      .querySelector("#mobile-nav-open")
+      .classList.remove("nav-tab-appear");
+  });
+
+document
+  .querySelector(".mobile-navlist-box4")
+  .addEventListener("click", function () {
+    document
+      .querySelector(".mobile-navlist")
+      .classList.remove("mobile-nav-appear");
+    document
+      .querySelector("#mobile-nav-open")
+      .classList.remove("nav-tab-appear");
   });
 
 const ChangePageStopScroll = (entries, ChangePagetricker) => {
